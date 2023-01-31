@@ -1,0 +1,39 @@
+.sidebar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: beige;
+  transform: translateX(calc(-100%));
+  transition: all 1s;
+  z-index: 3;
+  border-radius: 50px;
+  padding: 75px 50px;
+  &_control {
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    height: 100%;
+    width: 100px;
+    transition: all 0s;
+    display: flex;
+    align-items: center;
+    & svg {
+      transition: all 0.6s;
+      border-radius: 50px;
+      transform: rotate(180deg);
+    }
+  }
+  &.open {
+    transform: translateX(0px);
+    border-radius: 0px;
+    & .sidebar_control {
+      left: calc(100% - 100px);
+      & svg {
+        transform: rotate(0deg);
+        & path {
+          fill: #000;
+        }
+      }
+    }
+  }
+}

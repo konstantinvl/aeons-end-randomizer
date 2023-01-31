@@ -1,0 +1,63 @@
+.App {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  flex-wrap: wrap;
+  overflow: hidden;
+  max-height: 100vh;
+  position: relative;
+
+  // background-color: #937b7d;
+  animation: appBackground 20s infinite, fireInset 10s infinite;
+  &::-webkit-scrollbar {
+    width: 0px;
+    display: none;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: none;
+    width: 0px;
+    visibility: hidden;
+  }
+}
+// #080808	#937b7d	#b73724	#55453d
+
+@keyframes appBackground {
+  0% {
+    background: #080808;
+  }
+  25% {
+    background: #937b7d;
+  }
+  50% {
+    background: #b73724;
+  }
+  75% {
+    background: #55453d;
+  }
+  100% {
+    background: #080808;
+  }
+}
+
+@keyframes fireInset {
+  0% {
+    box-shadow: inset 0px 0px 20px 20px #edb844;
+  }
+  25% {
+    box-shadow: inset 2px 5px 10px 15px #eda444;
+  }
+  50% {
+    box-shadow: inset -2px 6px 8px 12px #edc544;
+  }
+  75% {
+    box-shadow: inset 4px 0px 10px 5px #ed9644;
+  }
+  100% {
+    box-shadow: inset 0px 0px 20px 20px #edb844;
+  }
+}
