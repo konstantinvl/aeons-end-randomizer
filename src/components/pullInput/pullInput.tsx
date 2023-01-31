@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { BoxInterface } from '../../app/interfaces';
+import React from 'react';
 import TranslatedText from '../translatedText';
 
 function PullInput(props: {
