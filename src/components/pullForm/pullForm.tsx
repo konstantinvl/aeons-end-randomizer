@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ADDONS_BOXES } from '../../app/renderData/addonsCards';
-import { BASE_CARDS, ADDONS } from '../../app/renderData/renderData';
+import { ADDONS } from '../../app/renderData/renderData';
 import { formDictionary } from '../../app/translation/form';
 import PullInput from '../pullInput/pullInput';
 import TranslatedText from '../translatedText';
@@ -13,7 +13,7 @@ function PullForm(props: { onChange: (addons: ADDONS_BOXES[]) => void }) {
 
   useEffect(() => {
     onChange(addonsPull);
-  }, [addonsPull]);
+  }, [addonsPull, onChange]);
 
   function onAddonPullChange(event: React.ChangeEvent<HTMLInputElement>) {
     if (event.target.checked) {

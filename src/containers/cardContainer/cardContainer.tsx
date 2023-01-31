@@ -1,5 +1,4 @@
-import React, { useCallback } from 'react';
-import { AEONS_END_PROMO1 } from '../../app/renderData/addonsCards';
+import React from 'react';
 import { useAppSelector } from '../../app/store/hooks';
 import Card from '../../components/card/card';
 import './style.scss';

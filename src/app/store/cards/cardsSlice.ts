@@ -1,8 +1,7 @@
-import { createSelector, createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { CardInterface, NoteInt, PresetInterface, SetupCardInterface } from '../../interfaces';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { CardInterface, PresetInterface, SetupCardInterface } from '../../interfaces';
 import { AEONS_END_BASE } from '../../renderData/baseGameCards';
 import { MARKET_SETUPS, PRESET_NAMES } from '../../renderData/marketPresets';
-import { RootState } from '../store';
 
 export interface CardsState {
   cardPull: CardInterface[];

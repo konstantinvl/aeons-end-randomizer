@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BASE_CARDS, ADDONS } from '../../app/renderData/renderData';
+import { ADDONS } from '../../app/renderData/renderData';
 import { formDictionary } from '../../app/translation/form';
 
 import PullInput from '../pullInput/pullInput';

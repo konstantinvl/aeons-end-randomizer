@@ -1,6 +1,4 @@
-import { PayloadAction } from '@reduxjs/toolkit';
-
-import { all, call, put, select } from 'redux-saga/effects';
+import { put, select } from 'redux-saga/effects';
 import { CardsState } from './cardsSlice';
 import { generateMarket } from '../../services/generateMarket';
 import { setCardMarket } from './cardsActions';

@@ -13,7 +13,7 @@ function Sidebar() {
   const dispatch = useAppDispatch();
   const setPullCallback = useCallback(
     (addons: ADDONS_BOXES[]) => dispatch(setCardPull(generatePull([], addons))),
-    []
+    [dispatch]
   );
 
   return (

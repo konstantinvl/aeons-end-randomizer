@@ -1,4 +1,3 @@
-import { FixedSizeArray } from 'fixed-size-array';
 import { PRESET_NAMES } from './renderData/marketPresets';
 
 export interface NoteInt {
