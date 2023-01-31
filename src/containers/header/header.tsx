@@ -5,11 +5,17 @@ import { MAIN_DICTIONARY } from '../../app/translation/main';
 import TranslatedText from '../../components/translatedText';
 import './style.scss';
 
-function Header() {
+function Header(props: { onClick: () => void }) {
+  const { onClick } = props;
   const dispatch = useAppDispatch();
   return (
     <div className='header'>
-      <div className='generate-button' onClick={() => dispatch(generateCardMarket())}>
+      <div
+        className='generate-button'
+        onClick={() => {
+          dispatch(generateCardMarket());
+          onClick();
+        }}>
         <TranslatedText text={MAIN_DICTIONARY.GENERATE} />
       </div>
     </div>
